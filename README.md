@@ -1,3 +1,41 @@
+# Love Running walkthrough
+
+A static running-club lesson site with home, gallery and signup pages. The club and meeting details are demonstration content, not verified current events.
+
+[Português (Brasil)](README.pt-BR.md)
+
+## Idea and process
+
+Source reviewed on 2026-10-01. Educational walkthrough based on Code Institute material. No dated planning notes, wireframes or personal design diary were found in the reviewed files. This records the implemented exercise, not original product history.
+
+## Architecture and design
+
+index.html contains hero, benefits, meeting tiles and social links; gallery.html and signup.html share navigation and styling. assets/css/style.css defines hero zoom, image gallery columns, signup styling and breakpoints at 1200, 950 and 800px. The reviewed home/signup pages load Font Awesome kits, not the root index.js. No backend or membership database appears in this structure.
+
+## Local preview
+
+```bash
+python3 -m http.server 8000
+```
+
+Open `http://localhost:8000/`. External fonts/icons/images need network access. The preview was not run during this update; no current public deployment was verified.
+
+## Testing and limitations
+
+No automated suite was found in the reviewed root listing. Browser/manual checks were not run. The signup form sends names, email and preference to the external Code Institute formdump endpoint, not a club enrollment system. Do not submit real personal details. signup.html has nested form tags and a misspelled methor attribute; index.html includes extra closing-icon markup and a stray >. Review HTML validation, form semantics, image/contrast checks, keyboard navigation and responsive layouts. No form was submitted in this update.
+
+## Snapshots
+
+No application screenshot was verified or added. Future dated files under `docs/assets/` should show actual desktop/mobile states, without personal form data. Add links only after files exist; never invent a working-state capture.
+
+## Credits and licensing
+
+Code Institute walkthrough/template material, libraries and assets retain their original rights. No new license is applied. The original README remains below as historical source, not current setup advice.
+
+---
+
+## Original README
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Iuri Johansson,
